@@ -1,0 +1,44 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#header-logo {
+  width: 100px;
+}
+
+nav {
+  width: 50%;
+  max-width: 375px;
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-links a {
+  font-family: "Raleway", sans-serif;
+  color: var(--Very-Dark-Blue);
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a:hover {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-container {
+    padding: 1.5rem 0;
+  }
+
+  #header-logo {
+    margin-top: 5px;
+  }
+}

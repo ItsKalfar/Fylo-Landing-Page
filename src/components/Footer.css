@@ -1,0 +1,137 @@
+footer {
+  background-color: var(--Very-Dark-Blue);
+  padding: 2rem;
+}
+
+.first_column .footer_logo {
+  width: 8rem;
+  margin: 2rem 0rem;
+}
+
+.mail,
+.phone {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+#footerLogo svg path {
+  fill: #fff;
+}
+
+.phone_icon,
+.mail_icon {
+  width: 1.1rem;
+}
+
+.mail p,
+.phone p {
+  color: var(--Light-Gray);
+  align-items: flex-start;
+  margin-left: 2rem;
+  font-size: 18px;
+}
+
+.second_column ul {
+  margin: 2rem 0;
+}
+.second_column ul li {
+  margin: 1rem 0;
+}
+
+.second_column ul li a {
+  color: var(--Light-Grayish-Blue);
+  font-size: 18px;
+  padding: 0.25rem 0;
+  -webkit-transition: all 0.3s ease;
+  border-bottom: 2px solid var(--Very-Dark-Blue);
+  font-family: var(--ff-open-sans);
+  transition: all 0.3s ease;
+}
+
+.second_column ul li a:hover {
+  border-bottom: 2px solid var(--Light-Grayish-Blue);
+}
+
+.social_media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social_media li {
+  margin: 10px;
+}
+
+.social_media li a {
+  border: 1px solid var(--Light-Grayish-Blue);
+  border-radius: 50%;
+  color: var(--Light-Grayish-Blue);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 37.5px;
+  width: 37.5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social_media li a:hover {
+  color: var(--Light-Gray);
+  border: 1px solid var(--Light-Gray);
+}
+
+@media screen and (min-width: 1024px) {
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .second_column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 14.5rem;
+  }
+  .second_column a {
+    font-size: 1.25rem;
+  }
+  .social_media {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  footer .container {
+    padding: 4rem;
+  }
+  .second_column {
+    width: 30%;
+    margin-top: 2rem;
+  }
+  .social_media {
+    margin-top: 2rem;
+    margin-right: 7rem;
+  }
+}

@@ -1,0 +1,213 @@
+#teams .container {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 5rem 1.25rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#teams {
+  background-color: rgb(249, 249, 249);
+}
+
+.left_section {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h4 {
+  color: var(--Very-Dark-Blue);
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--ff-raleway);
+}
+
+p {
+  font-size: 14px;
+  color: var(--Desaturated-Blue);
+  margin: 1rem 0;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.25rem 0rem;
+  width: 47%;
+  margin: 2.5rem auto;
+  border-bottom: 2px solid var(--Moderate-Cyan);
+  cursor: pointer;
+}
+
+.link a {
+  color: var(--Moderate-Cyan);
+  font-size: 14px;
+  margin-right: 0.5rem;
+  font-family: var(--ff-open-sans);
+}
+
+.card {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 370px;
+}
+
+.card .quote {
+  width: 1rem;
+}
+
+.card p {
+  font-size: 11px;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  font-family: var(--ff-raleway);
+  line-height: 1.2rem;
+}
+
+.card .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card .profile .profile_pic {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.card .profile .name_role {
+  height: 100%;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+}
+
+.name,
+.role {
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.info_img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.bgCurveMobile {
+  width: 100%;
+  margin-bottom: -25px;
+  margin-top: 100px;
+}
+
+.bgCurveDesktop {
+  width: 100%;
+  margin-bottom: -25px;
+  display: none;
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .left_section h4 {
+    font-size: 2rem;
+  }
+  .info_primary_text,
+  .info_secondary_text {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+  .card_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .name {
+    font-size: 1rem;
+  }
+  .role {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bgCurveMobile {
+    display: none;
+  }
+  .bgCurveDesktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .info_img {
+    width: 100%;
+    max-width: 640px;
+  }
+  #teams .container {
+    display: flex;
+    flex-direction: row;
+  }
+  #teams {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 4rem;
+  }
+
+  .left_section {
+    width: 50%;
+    align-items: flex-start;
+    margin-right: 2rem;
+  }
+
+  .left_section h4 {
+    text-align: left;
+    margin: 2rem 0;
+  }
+  .info_primary_text,
+  .info_secondary_text {
+    font-size: 1rem;
+  }
+
+  .link {
+    margin: 1.5rem 0;
+    padding: 0.25rem 0;
+    width: 30%;
+  }
+
+  .card {
+    margin: 1rem 0;
+    width: 75%;
+    padding: 1.5rem;
+  }
+  .card_text {
+    font-size: 0.95rem;
+  }
+  .right_section {
+    width: 50%;
+    margin-left: 1rem;
+  }
+}
